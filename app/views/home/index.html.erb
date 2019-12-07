@@ -9,22 +9,21 @@
 
   <!-- Favicons -->
   <link href="<%= asset_pack_path 'media/images/favicon.png' %>" rel="icon">
-  <link href="img/apple-touch-icon.png" rel="apple-touch-icon">
+  <link href="<%= asset_pack_path 'media/images/apple-touch-icon.png' %>" rel="apple-touch-icon">
 
   <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css?family=Raleway:400,700,900|Lato:400,900" rel="stylesheet">
 
   <!-- Bootstrap CSS File -->
-  <link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="<%= stylesheet_pack_tag 'lib/bootstrap/css/bootstrap' %>" rel="stylesheet">
 
   <!-- Libraries CSS Files -->
-  <link href="lib/font-awesome/css/font-awesome.min.css" rel="stylesheet">
-  <link href="lib/prettyphoto/css/prettyphoto.css" rel="stylesheet">
-  <link href="lib/hover/hoverex-all.css" rel="stylesheet">
+  <link href="<%= stylesheet_pack_tag 'lib/font-awesome/css/font-awesome' %>" rel="stylesheet">
+  <link href="<%= stylesheet_pack_tag 'lib/prettyphoto/css/prettyphoto' %>" rel="stylesheet">
+  <link href="<%= stylesheet_pack_tag 'lib/hover/hoverex-all' %>" rel="stylesheet">
 
   <!-- Main Stylesheet File -->
-  <link href="css/style.css" rel="stylesheet">
-
+  <%= stylesheet_pack_tag 'style' %>
   <!-- =======================================================
     Template Name: Solid
     Template URL: https://templatemag.com/solid-bootstrap-business-template/
@@ -80,7 +79,7 @@
           <h5>More Lorem Ipsum added here too.</h5>
         </div>
         <div class="col-lg-8 col-lg-offset-2 himg">
-          <img src="img/browser.png" class="img-responsive">
+          <img src="<%= asset_pack_path 'media/images/browser.png' %>" class="img-responsive">
         </div>
       </div>
       <!-- /row -->
@@ -127,11 +126,11 @@
       <div class="recentitems portfolio">
         <div class="portfolio-item graphic-design">
           <div class="he-wrap tpl6">
-            <img src="img/portfolio/portfolio_09.jpg" alt="">
+            <img src="<%= asset_pack_path 'media/images/portfolio/portfolio_09.jpg' %>" alt="">
             <div class="he-view">
               <div class="bg a0" data-animate="fadeIn">
                 <h3 class="a1" data-animate="fadeInDown">A Graphic Design Item</h3>
-                <a data-rel="prettyPhoto" href="img/portfolio/portfolio_09.jpg" class="dmbutton a2" data-animate="fadeInUp"><i class="fa fa-search"></i></a>
+                <a data-rel="prettyPhoto" href="<%= asset_pack_path 'media/images/portfolio/portfolio_09.jpg' %>" class="dmbutton a2" data-animate="fadeInUp"><i class="fa fa-search"></i></a>
                 <a href="single-project.html" class="dmbutton a2" data-animate="fadeInUp"><i class="fa fa-link"></i></a>
               </div>
               <!-- he bg -->
@@ -144,11 +143,11 @@
 
         <div class="portfolio-item web-design">
           <div class="he-wrap tpl6">
-            <img src="img/portfolio/portfolio_02.jpg" alt="">
+            <img src="<%= asset_pack_path 'media/images/portfolio/portfolio_02.jpg' %>" alt="">
             <div class="he-view">
               <div class="bg a0" data-animate="fadeIn">
                 <h3 class="a1" data-animate="fadeInDown">A Web Design Item</h3>
-                <a data-rel="prettyPhoto" href="img/portfolio/portfolio_02.jpg" class="dmbutton a2" data-animate="fadeInUp"><i class="fa fa-search"></i></a>
+                <a data-rel="prettyPhoto" href="<%= asset_pack_path 'media/images/portfolio/portfolio_02.jpg' %>" class="dmbutton a2" data-animate="fadeInUp"><i class="fa fa-search"></i></a>
                 <a href="single-project.html" class="dmbutton a2" data-animate="fadeInUp"><i class="fa fa-link"></i></a>
               </div>
               <!-- he bg -->
@@ -161,11 +160,11 @@
 
         <div class="portfolio-item graphic-design">
           <div class="he-wrap tpl6">
-            <img src="<%= asset_pack_path 'media/images/portfolio_03.jpg' %>" alt="">
+            <img src="<%= asset_pack_path 'media/images/portfolio/portfolio_03.jpg' %>" alt="">
             <div class="he-view">
               <div class="bg a0" data-animate="fadeIn">
                 <h3 class="a1" data-animate="fadeInDown">A Graphic Design Item</h3>
-                <a data-rel="prettyPhoto" href="<%= asset_pack_path 'media/images/portfolio_03.jpg' %>" class="dmbutton a2" data-animate="fadeInUp"><i class="fa fa-search"></i></a>
+                <a data-rel="prettyPhoto" href="<%= asset_pack_path 'media/images/portfolio/portfolio_03.jpg' %>" class="dmbutton a2" data-animate="fadeInUp"><i class="fa fa-search"></i></a>
                 <a href="single-project.html" class="dmbutton a2" data-animate="fadeInUp"><i class="fa fa-link"></i></a>
               </div>
               <!-- he bg -->
@@ -178,11 +177,11 @@
 
         <div class="portfolio-item graphic-design">
           <div class="he-wrap tpl6">
-            <img src="img/portfolio/portfolio_04.jpg" alt="">
+            <img src="<%= asset_pack_path 'media/images/portfolio/portfolio_04.jpg' %>" alt="">
             <div class="he-view">
               <div class="bg a0" data-animate="fadeIn">
                 <h3 class="a1" data-animate="fadeInDown">A Graphic Design Item</h3>
-                <a data-rel="prettyPhoto" href="img/portfolio/portfolio_04.jpg" class="dmbutton a2" data-animate="fadeInUp"><i class="fa fa-search"></i></a>
+                <a data-rel="prettyPhoto" href="<%= asset_pack_path 'media/images/portfolio/portfolio_04.jpg' %>" class="dmbutton a2" data-animate="fadeInUp"><i class="fa fa-search"></i></a>
                 <a href="single-project.html" class="dmbutton a2" data-animate="fadeInUp"><i class="fa fa-link"></i></a>
               </div>
               <!-- he bg -->
@@ -195,11 +194,11 @@
 
         <div class="portfolio-item books">
           <div class="he-wrap tpl6">
-            <img src="img/portfolio/portfolio_05.jpg" alt="">
+            <img src="<%= asset_pack_path 'media/images/portfolio/portfolio_05.jpg' %>" alt="">
             <div class="he-view">
               <div class="bg a0" data-animate="fadeIn">
                 <h3 class="a1" data-animate="fadeInDown">A Book Design Item</h3>
-                <a data-rel="prettyPhoto" href="img/portfolio/portfolio_05.jpg" class="dmbutton a2" data-animate="fadeInUp"><i class="fa fa-search"></i></a>
+                <a data-rel="prettyPhoto" href="<%= asset_pack_path 'media/images/portfolio/portfolio_05.jpg' %>" class="dmbutton a2" data-animate="fadeInUp"><i class="fa fa-search"></i></a>
                 <a href="single-project.html" class="dmbutton a2" data-animate="fadeInUp"><i class="fa fa-link"></i></a>
               </div>
               <!-- he bg -->
@@ -212,11 +211,11 @@
 
         <div class="portfolio-item graphic-design">
           <div class="he-wrap tpl6">
-            <img src="img/portfolio/portfolio_06.jpg" alt="">
+            <img src="<%= asset_pack_path 'media/images/portfolio/portfolio_06.jpg' %>" alt="">
             <div class="he-view">
               <div class="bg a0" data-animate="fadeIn">
                 <h3 class="a1" data-animate="fadeInDown">A Graphic Design Item</h3>
-                <a data-rel="prettyPhoto" href="img/portfolio/portfolio_06.jpg" class="dmbutton a2" data-animate="fadeInUp"><i class="fa fa-search"></i></a>
+                <a data-rel="prettyPhoto" href="<%= asset_pack_path 'media/images/portfolio/portfolio_06.jpg' %>" class="dmbutton a2" data-animate="fadeInUp"><i class="fa fa-search"></i></a>
                 <a href="single-project.html" class="dmbutton a2" data-animate="fadeInUp"><i class="fa fa-link"></i></a>
               </div>
               <!-- he bg -->
@@ -229,11 +228,11 @@
 
         <div class="portfolio-item books">
           <div class="he-wrap tpl6">
-            <img src="img/portfolio/portfolio_07.jpg" alt="">
+            <img src="<%= asset_pack_path 'media/images/portfolio/portfolio_07.jpg' %>" alt="">
             <div class="he-view">
               <div class="bg a0" data-animate="fadeIn">
                 <h3 class="a1" data-animate="fadeInDown">A Book Design Item</h3>
-                <a data-rel="prettyPhoto" href="img/portfolio/portfolio_07.jpg" class="dmbutton a2" data-animate="fadeInUp"><i class="fa fa-search"></i></a>
+                <a data-rel="prettyPhoto" href="<%= asset_pack_path 'media/images/portfolio/portfolio_07.jpg' %>" class="dmbutton a2" data-animate="fadeInUp"><i class="fa fa-search"></i></a>
                 <a href="single-project.html" class="dmbutton a2" data-animate="fadeInUp"><i class="fa fa-link"></i></a>
               </div>
               <!-- he bg -->
@@ -246,11 +245,11 @@
 
         <div class="portfolio-item graphic-design">
           <div class="he-wrap tpl6">
-            <img src="img/portfolio/portfolio_08.jpg" alt="">
+            <img src="<%= asset_pack_path 'media/images/portfolio/portfolio_08.jpg' %>" alt="">
             <div class="he-view">
               <div class="bg a0" data-animate="fadeIn">
                 <h3 class="a1" data-animate="fadeInDown">A Graphic Design Item</h3>
-                <a data-rel="prettyPhoto" href="img/portfolio/portfolio_08.jpg" class="dmbutton a2" data-animate="fadeInUp"><i class="fa fa-search"></i></a>
+                <a data-rel="prettyPhoto" href="<%= asset_pack_path 'media/images/portfolio/portfolio_08.jpg' %>" class="dmbutton a2" data-animate="fadeInUp"><i class="fa fa-search"></i></a>
                 <a href="single-project.html" class="dmbutton a2" data-animate="fadeInUp"><i class="fa fa-link"></i></a>
               </div>
               <!-- he bg -->
@@ -263,11 +262,11 @@
 
         <div class="portfolio-item web-design">
           <div class="he-wrap tpl6">
-            <img src="img/portfolio/portfolio_01.jpg" alt="">
+            <img src="<%= asset_pack_path 'media/images/portfolio/portfolio_01.jpg' %>" alt="">
             <div class="he-view">
               <div class="bg a0" data-animate="fadeIn">
                 <h3 class="a1" data-animate="fadeInDown">A Web Design Item</h3>
-                <a data-rel="prettyPhoto" href="img/portfolio/portfolio_01.jpg" class="dmbutton a2" data-animate="fadeInUp"><i class="fa fa-search"></i></a>
+                <a data-rel="prettyPhoto" href="<%= asset_pack_path 'media/images/portfolio/portfolio_01.jpg' %>" class="dmbutton a2" data-animate="fadeInUp"><i class="fa fa-search"></i></a>
                 <a href="single-project.html" class="dmbutton a2" data-animate="fadeInUp"><i class="fa fa-link"></i></a>
               </div>
               <!-- he bg -->
@@ -280,11 +279,11 @@
 
         <div class="portfolio-item books">
           <div class="he-wrap tpl6">
-            <img src="img/portfolio/portfolio_10.jpg" alt="">
+            <img src="<%= asset_pack_path 'media/images/portfolio/portfolio_10.jpg' %>" alt="">
             <div class="he-view">
               <div class="bg a0" data-animate="fadeIn">
                 <h3 class="a1" data-animate="fadeInDown">A Book Design Item</h3>
-                <a data-rel="prettyPhoto" href="img/portfolio/portfolio_10.jpg" class="dmbutton a2" data-animate="fadeInUp"><i class="fa fa-search"></i></a>
+                <a data-rel="prettyPhoto" href="<%= asset_pack_path 'media/images/portfolio/portfolio_10.jpg' %>" class="dmbutton a2" data-animate="fadeInUp"><i class="fa fa-search"></i></a>
                 <a href="single-project.html" class="dmbutton a2" data-animate="fadeInUp"><i class="fa fa-link"></i></a>
               </div>
               <!-- he bg -->
@@ -364,16 +363,16 @@
       <div class="row centered">
         <h3>OUR CLIENTS</h3>
         <div class="col-lg-3 col-md-3 col-sm-3">
-          <img src="img/clients/client01.png" class="img-responsive">
+          <img src="<%= asset_pack_path 'media/images/clients/client01.png' %>" class="img-responsive">
         </div>
         <div class="col-lg-3 col-md-3 col-sm-3">
-          <img src="img/clients/client02.png" class="img-responsive">
+          <img src="<%= asset_pack_path 'media/images/clients/client02.png' %>" class="img-responsive">
         </div>
         <div class="col-lg-3 col-md-3 col-sm-3">
-          <img src="img/clients/client03.png" class="img-responsive">
+          <img src="<%= asset_pack_path 'media/images/clients/client03.png' %>" class="img-responsive">
         </div>
         <div class="col-lg-3 col-md-3 col-sm-3">
-          <img src="img/clients/client04.png" class="img-responsive">
+          <img src="<%= asset_pack_path 'media/images/clients/client04.png' %>" class="img-responsive">
         </div>
       </div>
     </div>
@@ -432,16 +431,9 @@
   <!-- / copyrights -->
 
   <!-- JavaScript Libraries -->
-  <script src="lib/jquery/jquery.min.js"></script>
-  <script src="lib/bootstrap/js/bootstrap.min.js"></script>
-  <script src="lib/php-mail-form/validate.js"></script>
-  <script src="lib/prettyphoto/js/prettyphoto.js"></script>
-  <script src="lib/isotope/isotope.min.js"></script>
-  <script src="lib/hover/hoverdir.js"></script>
-  <script src="lib/hover/hoverex.min.js"></script>
-
+  <%= javascript_pack_tag 'application' %>
+  
   <!-- Template Main Javascript File -->
-  <script src="js/main.js"></script>
 
 </body>
 </html>
