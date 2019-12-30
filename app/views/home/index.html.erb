@@ -15,15 +15,17 @@
   <link href="https://fonts.googleapis.com/css?family=Raleway:400,700,900|Lato:400,900" rel="stylesheet">
 
   <!-- Bootstrap CSS File -->
-  <link href="<%= stylesheet_pack_tag 'lib/bootstrap/css/bootstrap' %>" rel="stylesheet">
+  <%= stylesheet_pack_tag 'lib/bootstrap/css/bootstrap' %>
+  <%= stylesheet_pack_tag 'lib/bootstrap/css/bootstrap' %>
 
   <!-- Libraries CSS Files -->
-  <link href="<%= stylesheet_pack_tag 'lib/font-awesome/css/font-awesome' %>" rel="stylesheet">
-  <link href="<%= stylesheet_pack_tag 'lib/prettyphoto/css/prettyphoto' %>" rel="stylesheet">
-  <link href="<%= stylesheet_pack_tag 'lib/hover/hoverex-all' %>" rel="stylesheet">
+  <%= stylesheet_pack_tag 'lib/font-awesome/css/font-awesome' %>
+  <%= stylesheet_pack_tag 'lib/prettyphoto/css/prettyphoto' %>
+  <%= stylesheet_pack_tag 'lib/hover/hoverex-all' %>
 
   <!-- Main Stylesheet File -->
-  <%= stylesheet_pack_tag 'style' %>
+  <%= stylesheet_pack_tag 'css/style' %>
+  <%= stylesheet_pack_tag 'application' %>
   <!-- =======================================================
     Template Name: Solid
     Template URL: https://templatemag.com/solid-bootstrap-business-template/
@@ -432,8 +434,12 @@
 
   <!-- JavaScript Libraries -->
   <%= javascript_pack_tag 'application' %>
-  
-  <!-- Template Main Javascript File -->
+  <%= javascript_pack_tag 'lib/jquery/jquery' %>
+  <%= javascript_pack_tag 'lib/bootstrap/js/bootstrap' %>
+  <%= javascript_pack_tag 'lib/php-mail-form/validate' %>
+  <%= javascript_pack_tag 'lib/isotope/isotope' %>
+  <%= javascript_pack_tag 'lib/hover/hoverdir' %>
+  <%= javascript_pack_tag 'lib/hover/hoverex' %>
 
 </body>
 </html>

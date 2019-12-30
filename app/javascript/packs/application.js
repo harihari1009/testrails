@@ -3,20 +3,20 @@
 // a relevant structure within app/javascript and only use these pack files to reference
 // that code so it'll be compiled.
 
-// require("@rails/ujs").start()
-// require("turbolinks").start()
-// require("@rails/activestorage").start()
-// require("channels")
+require("@rails/ujs").start()
+require("turbolinks").start()
+require("@rails/activestorage").start()
+require("channels")
 
 import 'bootstrap'
 import '@fortawesome/fontawesome-free/js/all'
 import '../src/application.scss'
-import './lib/jquery/jquery'
-import './lib/bootstrap/js/bootstrap'
-import './lib/php-mail-form/validate'
+// import './lib/jquery/jquery'
+// import './lib/bootstrap/js/bootstrap'
+// import './lib/php-mail-form/validate'
 // import './lib/prettyphoto/js/prettyphoto'
-import './lib/hover/hoverdir'
-import './js/main'
+// import './lib/hover/hoverdir'
+// import './js/main'
 require.context('../images', true)
 
 console.log('test!');
